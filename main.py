@@ -77,9 +77,9 @@ class GetStudentMark:
             print(f"remaing {self.totalDates-attempt_no} attempts")
             if self.checkCredentialsCorrent(reponse.content):
                 print(f"dob found")
-                
                 self.student_details.append([self.regno,dob])
-                self.getMarks(self.regno, dob, reponse.content)
+                self.saveDOB()
+                self.getMarks(dob, reponse.content)
                 break
             else:
                 print(f"trying again....")
