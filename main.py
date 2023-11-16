@@ -5,24 +5,25 @@ import pandas as pd
 import os
 import random
 import threading
-import time
+import datetime
 import csv
+
 
 class GetStudentMark:
 
     def __init__(self, rn) -> None:
         self.regno = rn 
-        dates = pd.date_range('1/1/2003', periods = (365), freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(dates)
-        dates += pd.date_range('7/1/2002', '12/31/2002', freq ='d').strftime("%d/%m/%Y").tolist() 
-        random.shuffle(dates)
-        dates += pd.date_range('1/1/2004', '6/30/2004', freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(dates)
-        dates += pd.date_range('7/1/2004', '12/31/2004', freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(dates)
-        dates += pd.date_range('1/1/2002', '6/30/2002', freq ='d').strftime("%d/%m/%Y").tolist()
-        random.shuffle(dates)
-        totalDates = len(self.dates)
+        self.dates = pd.date_range('1/1/2003', periods = (365), freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(self.dates)
+        self.dates += pd.date_range('7/1/2002', '12/31/2002', freq ='d').strftime("%d/%m/%Y").tolist() 
+        random.shuffle(self.dates)
+        self.dates += pd.date_range('1/1/2004', '6/30/2004', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(self.dates)
+        self.dates += pd.date_range('7/1/2004', '12/31/2004', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(self.dates)
+        self.dates += pd.date_range('1/1/2002', '6/30/2002', freq ='d').strftime("%d/%m/%Y").tolist()
+        random.shuffle(self.dates)
+        self.totalDates = len(self.dates)
 
     url = "https://sist.sathyabama.ac.in/sist_ese_june_2023/login.php"
     student_details = []
@@ -95,6 +96,8 @@ def getRegno():
 
 
 if __name__ == "__main__":
+    start = datetime.datetime.now()
+    print("start time ", start)
 
     pd.DataFrame.to_csv(pd.DataFrame(columns=["regno", "DOB"], data=[]), "student_details.csv")
 
@@ -114,4 +117,5 @@ if __name__ == "__main__":
     for thread in threads:
         thread.join()
    
-    
+    end = datetime.datetime.now()
+    print("Time elapsed: ", end-start)    
