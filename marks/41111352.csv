@@ -1,0 +1,18 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+1,SCSA1104,Problem Solving Techniques with C and C++,Theory,36,AAA,AAA,100,RA
+1,SEEA1103,Electrical and Electronics Engineering,Theory,37,AAA,AAA,100,RA
+1,SMTA1101,Engineering Mathematics - I ,Theory,28,AAA,AAA,100,RA
+1,SCSA2105,Problem Solving Techniques Lab,Practical,AAA,AAA,AAA,100,RA
+2,SMTA1201,Engineering Mathematics  - II,Theory,25,AAA,AAA,100,RA
+2,SPHA2101,Physics Lab,Practical,AAA,AAA,AAA,50,RA
+3,SCSA1302,Theory of Computation,Theory,33,AAA,AAA,100,RA
+3,SMTA1302,Discrete Mathematics,Theory,17,AAA,AAA,100,RA
+4,SAIC4003,Universal Human Values,Theory,46,26,72,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,39,32,71,100,Pass
+4,SCSA1403,Design and Analysis of Algorithms,Theory,41,25,66,100,Pass
+4,SCSA3092,Augmented and Virtual Reality,Theory,40,31,71,100,Pass
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,36,37,73,100,Pass
+4,SMTA1402,Probability and Statistics,Theory,29,3,32,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,44,42,86,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,25,23,48,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,44,40,84,100,Pass

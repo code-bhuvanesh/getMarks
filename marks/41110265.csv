@@ -1,0 +1,20 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+2,SCSA1201,Fundamentals of Digital Systems,Theory,16,AAA,AAA,100,RA
+2,SCSA1203,Data Structures,Theory,12,AAA,AAA,100,RA
+2,SCSA1204,Python Programming,Theory,13,1,14,100,RA
+2,SMTA1201,Engineering Mathematics  - II,Theory,14,0,14,100,RA
+2,SPHA1202,Physics for Information Science,Theory,16,AAA,AAA,100,RA
+3,SCSA1301,Database Management Systems,Theory,22,AAA,AAA,100,RA
+3,SCSA1302,Theory of Computation,Theory,15,AAA,AAA,100,RA
+3,SCSA1304,Advanced Data Structures,Theory,29,AAA,AAA,100,RA
+3,SITA1301,Programming in Java,Theory,14,AAA,AAA,100,RA
+3,SMTA1302,Discrete Mathematics,Theory,30,AAA,AAA,100,RA
+4,SAIC4003,Universal Human Values,Theory,34,32,66,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,20,6,26,100,RA
+4,SCSA1403,Design and Analysis of Algorithms,Theory,23,5,28,100,RA
+4,SCSA3016,Data Science,Theory,17,1,18,100,RA
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,16,1,17,100,RA
+4,SMTA1402,Probability and Statistics,Theory,16,0,16,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,45,36,81,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,22,22,44,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,28,35,63,100,Pass

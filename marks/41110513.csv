@@ -1,0 +1,10 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+4,SAIC4003,Universal Human Values,Theory,43,25,68,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,41,36,77,100,Pass
+4,SCSA1403,Design and Analysis of Algorithms,Theory,30,38,68,100,Pass
+4,SCSA3016,Data Science,Theory,35,23,58,100,Pass
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,41,32,73,100,Pass
+4,SMTA1402,Probability and Statistics,Theory,38,3,41,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,46,45,91,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,22,23,45,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,45,47,92,100,Pass

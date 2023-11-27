@@ -1,0 +1,22 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+2,SCSA1201,Fundamentals of Digital Systems,Theory,20,0,20,100,RA
+2,SCSA1203,Data Structures,Theory,25,1,26,100,RA
+2,SCSA1204,Python Programming,Theory,20,3,23,100,RA
+2,SMTA1201,Engineering Mathematics  - II,Theory,17,3,20,100,RA
+2,SPHA1202,Physics for Information Science,Theory,20,1,21,100,RA
+2,SPHA2101,Physics Lab,Practical,5,4,9,50,RA
+3,SCSA1301,Database Management Systems,Theory,12,1,13,100,RA
+3,SCSA1302,Theory of Computation,Theory,16,1,17,100,RA
+3,SCSA1304,Advanced Data Structures,Theory,10,0,10,100,RA
+3,SITA1301,Programming in Java,Theory,20,1,21,100,RA
+3,SMTA1302,Discrete Mathematics,Theory,17,0,17,100,RA
+3,SITA2302,Programming in Java Lab,Practical,25,27,52,100,Pass
+4,SAIC4003,Universal Human Values,Theory,32,18,50,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,23,11,34,100,RA
+4,SCSA1403,Design and Analysis of Algorithms,Theory,16,1,17,100,RA
+4,SCSA3016,Data Science,Theory,16,1,17,100,RA
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,19,1,20,100,RA
+4,SMTA1402,Probability and Statistics,Theory,16,2,18,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,23,32,55,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,22,21,43,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,30,38,68,100,Pass

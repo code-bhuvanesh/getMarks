@@ -1,0 +1,16 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+2,SCSA1201,Fundamentals of Digital Systems,Theory,19,AAA,AAA,100,RA
+2,SMTA1201,Engineering Mathematics  - II,Theory,17,0,17,100,RA
+3,SCSA1302,Theory of Computation,Theory,26,AAA,AAA,100,RA
+3,SCSA1304,Advanced Data Structures,Theory,25,25,50,100,Pass
+3,SITA1301,Programming in Java,Theory,21,6,27,100,RA
+3,SMTA1302,Discrete Mathematics,Theory,24,2,26,100,RA
+4,SAIC4003,Universal Human Values,Theory,32,26,58,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,29,21,50,100,Pass
+4,SCSA1403,Design and Analysis of Algorithms,Theory,27,30,57,100,Pass
+4,SCSA3092,Augmented and Virtual Reality,Theory,30,20,50,100,Pass
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,29,7,36,100,RA
+4,SMTA1402,Probability and Statistics,Theory,27,5,32,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,44,45,89,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,24,22,46,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,37,48,85,100,Pass
