@@ -1,0 +1,11 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+3,SITA1301,Programming in Java,Theory,22,14,36,100,RA
+4,SAIC4003,Universal Human Values,Theory,42,47,89,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,41,30,71,100,Pass
+4,SCSA1403,Design and Analysis of Algorithms,Theory,39,21,60,100,Pass
+4,SCSA3092,Augmented and Virtual Reality,Theory,33,17,50,100,Pass
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,31,7,38,100,RA
+4,SMTA1402,Probability and Statistics,Theory,29,21,50,100,Pass
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,47,42,89,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,22,23,45,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,44,47,91,100,Pass

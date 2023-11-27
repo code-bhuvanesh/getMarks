@@ -1,0 +1,12 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+2,SMTA1201,Engineering Mathematics  - II,Theory,21,29,50,100,Pass
+3,SMTA1302,Discrete Mathematics,Theory,30,20,50,100,Pass
+4,SAIC4003,Universal Human Values,Theory,40,25,65,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,37,23,60,100,Pass
+4,SCSA1403,Design and Analysis of Algorithms,Theory,34,18,52,100,Pass
+4,SCSA3092,Augmented and Virtual Reality,Theory,38,17,55,100,Pass
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,33,31,64,100,Pass
+4,SMTA1402,Probability and Statistics,Theory,36,6,42,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,38,43,81,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,18,21,39,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,37,32,69,100,Pass

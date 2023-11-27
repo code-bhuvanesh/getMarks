@@ -1,0 +1,33 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+1,SCSA1104,Problem Solving Techniques with C and C++,Theory,10,AAA,AAA,100,RA
+1,SEEA1103,Electrical and Electronics Engineering,Theory,10,AAA,AAA,100,RA
+1,SHSA1105,Technical English,Theory,10,AAA,AAA,100,RA
+1,SMTA1101,Engineering Mathematics - I ,Theory,10,AAA,AAA,100,RA
+1,SCSA2105,Problem Solving Techniques Lab,Practical,AAA,AAA,AAA,100,RA
+1,SCYA2101,Engineering Chemistry  Lab,Practical,AAA,AAA,AAA,50,RA
+2,SCSA1201,Fundamentals of Digital Systems,Theory,10,AAA,AAA,100,RA
+2,SCSA1203,Data Structures,Theory,16,AAA,AAA,100,RA
+2,SCSA1204,Python Programming,Theory,10,AAA,AAA,100,RA
+2,SMTA1201,Engineering Mathematics  - II,Theory,13,AAA,AAA,100,RA
+2,SPHA1202,Physics for Information Science,Theory,16,AAA,AAA,100,RA
+2,SCSA2201,Data Structures Lab,Practical,AAA,AAA,AAA,100,RA
+2,SEIA2202,Digital Systems Lab,Practical,AAA,AAA,AAA,100,RA
+2,SPHA2101,Physics Lab,Practical,AAA,AAA,AAA,50,RA
+3,SCSA1301,Database Management Systems,Theory,10,AAA,AAA,100,RA
+3,SCSA1302,Theory of Computation,Theory,10,AAA,AAA,100,RA
+3,SCSA1304,Advanced Data Structures,Theory,14,AAA,AAA,100,RA
+3,SITA1301,Programming in Java,Theory,12,AAA,AAA,100,RA
+3,SMTA1302,Discrete Mathematics,Theory,12,AAA,AAA,100,RA
+3,SCSADPROJ,Design Thinking and Innovations,Project,0,AAA,AAA,100,RA
+3,    SCSA2302,Code Optimization and Debugging - I,Practical,AAA,AAA,AAA,50,RA
+3,SCSA2301,Database Management Systems Lab,Practical,AAA,AAA,AAA,100,RA
+3,SITA2302,Programming in Java Lab,Practical,AAA,AAA,AAA,100,RA
+4,SAIC4003,Universal Human Values,Theory,32,AAA,AAA,100,RA
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,16,AAA,AAA,100,RA
+4,SCSA1403,Design and Analysis of Algorithms,Theory,19,AAA,AAA,100,RA
+4,SCSA3016,Data Science,Theory,22,AAA,AAA,100,RA
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,20,AAA,AAA,100,RA
+4,SMTA1402,Probability and Statistics,Theory,16,AAA,AAA,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,AAA,AAA,AAA,100,RA
+4,SCSA2402,Code Optimization and Debugging - II,Practical,AAA,AAA,AAA,50,RA
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,AAA,AAA,AAA,100,RA

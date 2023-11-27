@@ -1,0 +1,19 @@
+Semester,Course Code,Course Title,Course Type,Internal Marks,External Marks,Total,Max. Marks,Result
+2,SCSA1203,Data Structures,Theory,19,10,29,100,RA
+2,SCSA1204,Python Programming,Theory,19,5,24,100,RA
+2,SMTA1201,Engineering Mathematics  - II,Theory,16,0,16,100,RA
+2,SPHA1202,Physics for Information Science,Theory,16,2,18,100,RA
+3,SCSA1301,Database Management Systems,Theory,29,21,50,100,Pass
+3,SCSA1302,Theory of Computation,Theory,17,8,25,100,RA
+3,SCSA1304,Advanced Data Structures,Theory,21,0,21,100,RA
+3,SITA1301,Programming in Java,Theory,17,0,17,100,RA
+3,SMTA1302,Discrete Mathematics,Theory,19,0,19,100,RA
+4,SAIC4003,Universal Human Values,Theory,36,31,67,100,Pass
+4,SCSA1401,Object Oriented Analysis and System Engineering,Theory,27,25,52,100,Pass
+4,SCSA1403,Design and Analysis of Algorithms,Theory,25,25,50,100,Pass
+4,SCSA3016,Data Science,Theory,30,20,50,100,Pass
+4,SECA1404,Microprocessor and Microcontroller Based Systems,Theory,24,9,33,100,RA
+4,SMTA1402,Probability and Statistics,Theory,29,2,31,100,RA
+4,SCSA2401,Object Oriented Analysis and System Engineering Lab,Practical,48,35,83,100,Pass
+4,SCSA2402,Code Optimization and Debugging - II,Practical,18,21,39,50,Pass
+4,SECA2405,Microprocessor and Microcontroller Lab,Practical,48,40,88,100,Pass
